@@ -57,6 +57,7 @@
      <Compile Include="Assets\CameraFollow.cs" />
      <Compile Include="Assets\checkSuelo.cs" />
      <Compile Include="Assets\DibujarLinea.cs" />
+     <Compile Include="Assets\EnemySlimeControl.cs" />
      <Compile Include="Assets\Movimiento.cs" />
      <Compile Include="Assets\PlayerControl.cs" />
  <Reference Include="Unity.TextMeshPro.Editor">
