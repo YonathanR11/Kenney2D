@@ -33,6 +33,19 @@ public class EnemySlimeControl : MonoBehaviour
         }else if(speed > 0){
             transform.localScale = new Vector3(-1f, 1f, 1f);
         }
-
     }
+
+    void OnTriggerEnter2D(Collider2D col){
+        if(col.gameObject.tag == "Player"){
+            // float yOffset = 0.2f;
+            if(transform.position.y < col.transform.position.y){
+                col.SendMessage("EnemyJump");
+                Destroy(gameObject);
+            }else{
+                col.SendMessage("EnemyKnockback", transform.position.x);
+            }
+        }
+    }
+
+
 }

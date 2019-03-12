@@ -12,14 +12,17 @@ public class PlayerControl : MonoBehaviour
 
     private Animator anim;
     private Rigidbody2D rb2d;
+    private SpriteRenderer spr;
     private bool salto;
     private bool dobleSalto;
+    private bool movement = true;
 
     // Start is called before the first frame update
     void Start()
     {
         rb2d = GetComponent<Rigidbody2D>();
         anim = GetComponent<Animator>();
+        spr = GetComponent<SpriteRenderer>();
     }
 
     // Update is called once per frame
@@ -52,6 +55,7 @@ public class PlayerControl : MonoBehaviour
 
 
         float h = Input.GetAxis("Horizontal");
+        if(!movement) h=0;
 
         rb2d.AddForce(Vector2.right * speed * h);
 
@@ -76,6 +80,24 @@ public class PlayerControl : MonoBehaviour
 
     void OnBecameInvisible(){
         transform.position = new Vector3(-12,0,0);
+    }
+
+    public void EnemyJump(){
+        salto = true;
+    }
+
+    public void EnemyKnockback(float enemyPosX){
+        salto = true;
+        float side = Mathf.Sign(enemyPosX - transform.position.x);
+        rb2d.AddForce(Vector2.left * side * poderSalto, ForceMode2D.Impulse);
+        movement = false;
+        Invoke("EnableMovement",0.7f);
+        spr.color = Color.red;
+    }
+
+    void EnableMovement(){
+        movement = true;
+        spr.color = Color.white;
     }
 
 }
