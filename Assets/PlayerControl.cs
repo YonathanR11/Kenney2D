@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class PlayerControl : MonoBehaviour
 {
@@ -9,6 +10,9 @@ public class PlayerControl : MonoBehaviour
     public float speed = 2f;
     public bool tocasuelo;
     public float poderSalto = 6.5f;
+    public Vector3 spawnInit;
+    public int cont = 0;
+    public string escena;
 
     private Animator anim;
     private Rigidbody2D rb2d;
@@ -79,7 +83,8 @@ public class PlayerControl : MonoBehaviour
     }
 
     void OnBecameInvisible(){
-        transform.position = new Vector3(-12,0,0);
+        // transform.position = new Vector3(-12,0,0);
+        transform.position = spawnInit;
     }
 
     public void EnemyJump(){
@@ -98,6 +103,20 @@ public class PlayerControl : MonoBehaviour
     void EnableMovement(){
         movement = true;
         spr.color = Color.white;
+    }
+
+    void OnCollisionEnter2D(Collision2D col)
+    {
+
+        if(col.gameObject.tag == "Puerta" && cont == 1){
+            cont = 0;
+            SceneManager.LoadScene(escena, LoadSceneMode.Single);
+        }else if(col.gameObject.tag == "Llave"){
+            cont++;
+            print(cont);
+            Destroy(col.gameObject);
+        }
+
     }
 
 }

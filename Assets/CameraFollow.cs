@@ -30,4 +30,5 @@ public class CameraFollow : MonoBehaviour
             Mathf.Clamp(posY, minCamPos.y, maxCamPos.y), 
             transform.position.z);
     }
+    
 }

@@ -6,6 +6,8 @@ TagManager:
   tags:
   - Piso
   - Platform
+  - Llave
+  - Puerta
   layers:
   - Default
   - TransparentFX
