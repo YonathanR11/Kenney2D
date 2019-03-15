@@ -4,6 +4,7 @@ C:/Users/Yonathan/Documents/Unity/Kenney/Release/Kenney.exe
 SceneListBegin?
 Assets/Scenes/Escena1.unity
 Assets/Scenes/Escena2.unity
+Assets/Scenes/Fin.unity
 SceneListEnd?
 984dcc0ba3707b7691fbdca8ff508d28 Unity.TextMeshPro.dll:TMPro.TMP_SelectionCaret
 01aa15e337e3a9c62f15153dfac6d589 Unity.TextMeshPro.dll:TMPro.TMP_Dropdown
@@ -19,7 +20,7 @@ e1bbf0ab858085e38fae6b12ebbdcd35 UnityEngine.Timeline.dll:UnityEngine.Timeline.C
 e1bbf0ab858085e38fae6b12ebbdcd35 UnityEngine.Timeline.dll:UnityEngine.Timeline.GroupTrack
 e1bbf0ab858085e38fae6b12ebbdcd35 UnityEngine.Timeline.dll:UnityEngine.Timeline.PlayableTrack
 201e3fde670b00545944bb3db215c80a UnityEngine.Timeline.dll:UnityEngine.Timeline.TimelineAsset
-25c4e52573b0a47da599d5e6b094ffb3 Assembly-CSharp.dll:.PlayerControl
+48c2b4130df040d3ab1ac104ed500c24 Assembly-CSharp.dll:.PlayerControl
 e638ca1d2e4e7700b60c75479fd1f873 Assembly-CSharp.dll:Tiled2Unity.GPUInstancing
 e7a73f5f78ba6445195ec23b74a1ce2d Unity.TextMeshPro.dll:TMPro.TMP_ScrollbarEventHandler
 cf9f5cf2c3145a37ac07f00e50e460f9 UnityEngine.UI.dll:UnityEngine.UI.AspectRatioFitter
@@ -104,6 +105,7 @@ e1bbf0ab858085e38fae6b12ebbdcd35 UnityEngine.Timeline.dll:UnityEngine.Timeline.G
 e1bbf0ab858085e38fae6b12ebbdcd35 UnityEngine.Timeline.dll:UnityEngine.Timeline.PlayableTrack
 201e3fde670b00545944bb3db215c80a UnityEngine.Timeline.dll:UnityEngine.Timeline.TimelineAsset
 00274a21279f5cb831ce20f895049e38 Unity.TextMeshPro.dll:TMPro.TMP_SubMeshUI
+71bb6a6b6c8f052f948db64c7dd3ca4f Assembly-CSharp.dll:.PuertaControl
 e6ae40841db498b6e673877ac45ad208 UnityEngine.Networking.dll:UnityEngine.Networking.NetworkAnimator
 71bb6a6b6c8f052f948db64c7dd3ca4f UnityEngine.Networking.dll:UnityEngine.Networking.NetworkBehaviour
 1dcb82730d983b77cec736c6ef19f814 UnityEngine.Networking.dll:UnityEngine.Networking.NetworkDiscovery
@@ -200,6 +202,7 @@ b3ab2106268377ffe25dd18ac23dca28 Unity.TextMeshPro.dll:TMPro.TMP_Asset
 71bb6a6b6c8f052f948db64c7dd3ca4f Unity.Analytics.Editor.dll:UnityEditor.Analytics.AnalyticsEventTrackerEditor
 71bb6a6b6c8f052f948db64c7dd3ca4f Unity.TextMeshPro.dll:TMPro.TMP_SpriteAnimator
 002020d0363e1d2fc6726436c90292ce Assembly-CSharp.dll:.Movimiento
+71bb6a6b6c8f052f948db64c7dd3ca4f Assembly-CSharp.dll:.LlaveControl
 4fd8bf02e3089425d3502e26c44ba31a Unity.TextMeshPro.dll:TMPro.TextContainer
 0da0a5340966572e26bc4cc14ac3db56 Assembly-CSharp.dll:Tiled2Unity.TileAnimator
 5313a3a994d81e07a6eabfce36bff46f Assembly-CSharp.dll:.DibujarLinea
@@ -319,4 +322,4 @@ cd67f3e1e9ccac6db86c1564cea5a827 Vuforia.UnityExtensions.dll:Vuforia.VuforiaConf
 fbbf64dcbe0662e3eda1dec45ea8f895 Vuforia.UnityExtensions.dll:Vuforia.WireframeBehaviour
 71bb6a6b6c8f052f948db64c7dd3ca4f Vuforia.UnityExtensions.dll:Vuforia.WireframeTrackableEventHandler
 7c64cc47835db7fad1891204f51fd321 Assembly-CSharp.dll:.CameraFollow
-633197c6dbd81540ec440015c5e01b8d Assembly-CSharp.dll:.PuertaControl
+002020d0363e1d2fc6726436c90292ce Assembly-CSharp.dll:.EnemyMouseControl

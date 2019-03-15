@@ -181,7 +181,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   fallDelay: 1
-  respawnDelay: 5
+  respawnDelay: 3
 --- !u!1 &9670846082014140
 GameObject:
   m_ObjectHideFlags: 0

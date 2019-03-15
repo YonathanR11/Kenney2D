@@ -1,7 +1,7 @@
 ﻿<?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <!--Tiled2Unity generated xml data-->
 <!--Do not modify by hand-->
-<!--Last exported: 12/03/2019 12:29:09 p. m.-->
+<!--Last exported: 12/03/2019 09:13:29 p. m.-->
 <Tiled2Unity version="1.0.13.2">
   <AssignMaterial mesh="Escena1_mesh_0001" material="sprites" />
   <AssignMaterial mesh="Escena1_mesh_0002" material="sprites" />
@@ -24,28 +24,28 @@
     </GameObject>
     <GameObject name="Collision" x="0" y="0" z="0">
       <ObjectLayer offsetX="0" offsetY="0" color="#ff808080" />
-      <GameObject name="PolygonObject" x="0" y="-16" rotation="0" layer="">
-        <PolygonObjectComponent tmx-object-id="2" tmx-object-name="" tmx-object-type="" tmx-object-x="0" tmx-object-y="336" tmx-object-width="0" tmx-object-height="0" tmx-object-rotation="0" />
+      <GameObject name="PolygonObject" x="0" y="-20" rotation="0" layer="">
+        <PolygonObjectComponent tmx-object-id="9" tmx-object-name="" tmx-object-type="" tmx-object-x="0" tmx-object-y="420" tmx-object-width="0" tmx-object-height="0" tmx-object-rotation="0" />
         <PolygonCollider2D>
-          <Path>0,0 12.95238,0 13,-3.976191 0,-3.976191</Path>
+          <Path>0,0 0,4 13,4 13,0</Path>
         </PolygonCollider2D>
       </GameObject>
-      <GameObject name="PolygonObject" x="22.97619" y="-16" rotation="0" layer="">
-        <PolygonObjectComponent tmx-object-id="3" tmx-object-name="" tmx-object-type="" tmx-object-x="482.5" tmx-object-y="336" tmx-object-width="0" tmx-object-height="0" tmx-object-rotation="0" />
+      <GameObject name="PolygonObject" x="23" y="-20" rotation="0" layer="">
+        <PolygonObjectComponent tmx-object-id="10" tmx-object-name="" tmx-object-type="" tmx-object-x="483" tmx-object-y="420" tmx-object-width="0" tmx-object-height="0" tmx-object-rotation="0" />
         <PolygonCollider2D>
-          <Path>0,0 2.976191,0 3.02381,-0.9761905 8.023809,-1 8.023809,0 11,-0.02380952 11.02381,-3.952381 0,-3.976191</Path>
+          <Path>0,0 0,4 3,4 3,3 8,3 8,4 11,4 11,0</Path>
         </PolygonCollider2D>
       </GameObject>
-      <GameObject name="PolygonObject" x="38.9761925" y="-19.9523811" rotation="0" layer="">
-        <PolygonObjectComponent tmx-object-id="4" tmx-object-name="" tmx-object-type="" tmx-object-x="818.5" tmx-object-y="419" tmx-object-width="0" tmx-object-height="0" tmx-object-rotation="0" />
+      <GameObject name="PolygonObject" x="39" y="-20" rotation="0" layer="">
+        <PolygonObjectComponent tmx-object-id="11" tmx-object-name="" tmx-object-type="" tmx-object-x="819" tmx-object-y="420" tmx-object-width="0" tmx-object-height="0" tmx-object-rotation="0" />
         <PolygonCollider2D>
-          <Path>0,0 0,3.976191 19.97619,3.952381 20,0</Path>
+          <Path>0,0 0,4 20,4 20,0</Path>
         </PolygonCollider2D>
       </GameObject>
-      <GameObject name="PolygonObject" x="75" y="-19.97619" rotation="0" layer="">
-        <PolygonObjectComponent tmx-object-id="5" tmx-object-name="" tmx-object-type="" tmx-object-x="1575" tmx-object-y="419.5" tmx-object-width="0" tmx-object-height="0" tmx-object-rotation="0" />
+      <GameObject name="PolygonObject" x="75" y="-20" rotation="0" layer="">
+        <PolygonObjectComponent tmx-object-id="12" tmx-object-name="" tmx-object-type="" tmx-object-x="1575" tmx-object-y="420" tmx-object-width="0" tmx-object-height="0" tmx-object-rotation="0" />
         <PolygonCollider2D>
-          <Path>0,0 0.02380952,8.952381 11.95238,8.952381 11.97619,9.976191 12.95238,9.952381 12.97619,10.97619 15.92857,10.95238 15.97619,11.92857 24.97619,11.92857 25,0</Path>
+          <Path>0,0 0,9 12,9 12,10 13,10 13,11 16,11 16,12 25,12 25,0</Path>
         </PolygonCollider2D>
       </GameObject>
     </GameObject>
