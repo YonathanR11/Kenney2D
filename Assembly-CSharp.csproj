@@ -63,6 +63,7 @@
      <Compile Include="Assets\Movimiento.cs" />
      <Compile Include="Assets\PlayerControl.cs" />
      <Compile Include="Assets\PuertaControl.cs" />
+     <Compile Include="Assets\SoundControl.cs" />
      <Compile Include="Assets\Tiled2Unity\Scripts\Runtime\CircleObject.cs" />
      <Compile Include="Assets\Tiled2Unity\Scripts\Runtime\GameObjectExtensions.cs" />
      <Compile Include="Assets\Tiled2Unity\Scripts\Runtime\GPUInstancing.cs" />

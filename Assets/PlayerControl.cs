@@ -37,9 +37,11 @@ public class PlayerControl : MonoBehaviour
 
         if(Input.GetKeyDown(KeyCode.UpArrow)){
             if(tocasuelo){
+                SoundControl.instance.playSalto();
             salto = true;
             dobleSalto = true;
             }else if(dobleSalto){
+                SoundControl.instance.playSalto();
                 salto = true;
             dobleSalto = false;
             }
@@ -93,6 +95,7 @@ public class PlayerControl : MonoBehaviour
 
     public void EnemyKnockback(float enemyPosX){
         salto = true;
+        SoundControl.instance.playHit();
         float side = Mathf.Sign(enemyPosX - transform.position.x);
         rb2d.AddForce(Vector2.left * side * poderSalto, ForceMode2D.Impulse);
         movement = false;
@@ -113,6 +116,7 @@ public class PlayerControl : MonoBehaviour
             SceneManager.LoadScene(escena, LoadSceneMode.Single);
         }else if(col.gameObject.tag == "Llave"){
             cont++;
+            SoundControl.instance.playLlave();
             print(cont);
             Destroy(col.gameObject);
         }
