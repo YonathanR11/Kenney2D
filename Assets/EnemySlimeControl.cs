@@ -40,6 +40,7 @@ public class EnemySlimeControl : MonoBehaviour
             // float yOffset = 0.2f;
             if(transform.position.y < col.transform.position.y){
                 col.SendMessage("EnemyJump");
+                SoundControl.instance.playDeadEnemy();
                 Destroy(gameObject);
             }else{
                 col.SendMessage("EnemyKnockback", transform.position.x);

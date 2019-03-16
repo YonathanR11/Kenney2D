@@ -9,6 +9,8 @@ public class SoundControl : MonoBehaviour
     public AudioClip hit;
     public AudioClip salto;
     public AudioClip llave;
+    public AudioClip deadEnemy;
+    public AudioClip down;
 
     public AudioSource audioSource;
 
@@ -40,6 +42,16 @@ public class SoundControl : MonoBehaviour
 
     public void playLlave(){
         audioSource.clip = llave;
+        audioSource.Play();
+    }
+
+    public void playDeadEnemy(){
+        audioSource.clip = deadEnemy;
+        audioSource.Play();
+    }
+
+    public void playDown(){
+        audioSource.clip = down;
         audioSource.Play();
     }
 }

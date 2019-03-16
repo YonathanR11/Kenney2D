@@ -13,6 +13,10 @@ public class PlayerControl : MonoBehaviour
     public Vector3 spawnInit;
     public int cont = 0;
     public string escena;
+    public Vida vida_canvas;
+    public LlaveControl LlaveC;
+    public int vidas;
+    public int llaveItem = 1;
 
     private Animator anim;
     private Rigidbody2D rb2d;
@@ -85,8 +89,11 @@ public class PlayerControl : MonoBehaviour
     }
 
     void OnBecameInvisible(){
-        // transform.position = new Vector3(-12,0,0);
+        if(vidas > 0){
+        SoundControl.instance.playDown();
+        Invoke("ComprobarVida",0);
         transform.position = spawnInit;
+        }
     }
 
     public void EnemyJump(){
@@ -100,7 +107,18 @@ public class PlayerControl : MonoBehaviour
         rb2d.AddForce(Vector2.left * side * poderSalto, ForceMode2D.Impulse);
         movement = false;
         Invoke("EnableMovement",0.7f);
+        Invoke("ComprobarVida",0);
         spr.color = Color.red;
+    }
+
+    void ComprobarVida(){
+            vidas=vidas-1;
+        if(vidas < 1){
+            SceneManager.LoadScene("gameOver", LoadSceneMode.Single);
+        }else{
+            vida_canvas.CambioVida(vidas);
+        print("Vidas: "+vidas);
+        }
     }
 
     void EnableMovement(){
@@ -115,6 +133,7 @@ public class PlayerControl : MonoBehaviour
             cont = 0;
             SceneManager.LoadScene(escena, LoadSceneMode.Single);
         }else if(col.gameObject.tag == "Llave"){
+            LlaveC.CambioLlave(llaveItem);
             cont++;
             SoundControl.instance.playLlave();
             print(cont);
