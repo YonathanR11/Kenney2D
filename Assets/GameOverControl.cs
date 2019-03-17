@@ -25,4 +25,8 @@ public class GameOverControl : MonoBehaviour
          Application.Quit();
     }
 
+    public void PlayGmane(){
+         SceneManager.LoadScene("Escena1", LoadSceneMode.Single);
+    }
+
 }

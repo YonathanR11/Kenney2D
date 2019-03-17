@@ -2,6 +2,7 @@ Win64
 PlayerPath?
 C:/Users/Yonathan/Documents/Unity/Kenney/Release/Kenney.exe
 SceneListBegin?
+Assets/Scenes/Portada.unity
 Assets/Scenes/Escena1.unity
 Assets/Scenes/Escena2.unity
 Assets/Scenes/Escena3.unity

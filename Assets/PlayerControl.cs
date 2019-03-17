@@ -88,6 +88,7 @@ public class PlayerControl : MonoBehaviour
 
     }
 
+
     void OnBecameInvisible(){
         if(vidas > 0){
         SoundControl.instance.playDown();

@@ -175,7 +175,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   target: {fileID: 2910111041889160007}
-  speed: 1
+  speed: 2
 --- !u!1 &2910111041638253996
 GameObject:
   m_ObjectHideFlags: 0
